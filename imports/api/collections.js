@@ -7,5 +7,7 @@ VirtualOperations = new Mongo.Collection("VirtualOperations");
 Settings = new Mongo.Collection("settings");
 
 if (Meteor.isServer) {
-
+    Meteor.publish('settings', function () {
+        return Settings.find();
+    });
 }

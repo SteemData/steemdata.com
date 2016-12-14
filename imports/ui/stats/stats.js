@@ -5,14 +5,14 @@ import './stats.html';
 
 
 Template.stats.onCreated(function () {
-    // this.subscribe('allPayouts');
+    this.subscribe('settings');
 });
 
 Template.stats.helpers({
-    // payouts() {
-    //     let currentLimit = Template.instance().collectionLimit.get();
-    //     return Payouts.find({}, {sort: {"createdAt": -1}, limit: currentLimit});
-    // },
+    lastBlock() {
+        let settings = Settings.findOne();
+        return settings ? settings['last_block'] : 0;
+    },
 });
 
 Template.stats.events({
