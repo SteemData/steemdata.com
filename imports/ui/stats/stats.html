@@ -1,7 +1,51 @@
 <template name="stats">
     <div class="container">
-        Last processed block: {{number lastBlock}}
 
+        <h3>Quick Overview</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Last Block</h5></div>
+                    <div class="panel-body">{{number lastBlock}}</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Accounts</h5></div>
+                    <div class="panel-body">
+                        {{#if hasPublishedCount 'accountsCounter'}}
+                            {{number (getPublishedCount 'accountsCounter')}}
+                        {{else}}
+                            Loading...
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Posts</h5></div>
+                    <div class="panel-body">
+                        {{#if hasPublishedCount 'postsCounter'}}
+                            {{number (getPublishedCount 'postsCounter')}}
+                        {{else}}
+                            Loading...
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Operations</h5></div>
+                    <div class="panel-body">
+                        {{#if hasPublishedCount 'operationsCounter'}}
+                            {{number (getPublishedCount 'operationsCounter')}}
+                        {{else}}
+                            Loading...
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

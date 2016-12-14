@@ -6,6 +6,7 @@ import './stats.html';
 
 Template.stats.onCreated(function () {
     this.subscribe('settings');
+    this.subscribe('statsCounters');
 });
 
 Template.stats.helpers({
