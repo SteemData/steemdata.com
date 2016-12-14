@@ -14,8 +14,8 @@ if (Meteor.isServer) {
 
     // stats page counters
     Meteor.publish('statsCounters', function() {
-        Counts.publish(this, 'accountsCounter', Accounts2.find(), { noReady: true });
-        Counts.publish(this, 'postsCounter', Posts.find(), { noReady: true });
-        Counts.publish(this, 'operationsCounter', Operations.find());
+        Counts.publish(this, 'accountsCounter', Accounts2.find());
+        // Counts.publish(this, 'postsCounter', Posts.find(), { noReady: true });
+        // Counts.publish(this, 'operationsCounter', Operations.find());
     });
 }
