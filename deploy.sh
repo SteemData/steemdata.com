@@ -1,5 +1,5 @@
 #!/bin/bash
 
 docker build -t steemdata .
-docker tag webui furion/
-docker push furion/
+docker tag steemdata furion/steemdata
+docker push furion/steemdata
