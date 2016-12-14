@@ -5,17 +5,14 @@ Posts = new Mongo.Collection("Posts");
 Operations = new Mongo.Collection("Operations");
 VirtualOperations = new Mongo.Collection("VirtualOperations");
 Settings = new Mongo.Collection("settings");
+Statistics = new Mongo.Collection("stats");
 
 if (Meteor.isServer) {
     Meteor.publish('settings', function () {
         return Settings.find();
     });
 
-
-    // stats page counters
-    Meteor.publish('statsCounters', function() {
-        Counts.publish(this, 'accountsCounter', Accounts2.find());
-        // Counts.publish(this, 'postsCounter', Posts.find(), { noReady: true });
-        // Counts.publish(this, 'operationsCounter', Operations.find());
+    Meteor.publish('statistics', function () {
+        return Statistics.find();
     });
 }

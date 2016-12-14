@@ -11,13 +11,19 @@
             </div>
             <div class="col-md-3">
                 <div class="panel panel-default">
+                    <div class="panel-heading"><h5>DB Size</h5></div>
+                    <div class="panel-body">{{number stats.dbSize}} MB</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Storage</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
                     <div class="panel-heading"><h5>Accounts</h5></div>
                     <div class="panel-body">
-                        {{#if hasPublishedCount 'accountsCounter'}}
-                            {{number (getPublishedCount 'accountsCounter')}}
-                        {{else}}
-                            Loading...
-                        {{/if}}
+                        {{> statNumber stats.Accounts}}
                     </div>
                 </div>
             </div>
@@ -25,11 +31,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading"><h5>Posts</h5></div>
                     <div class="panel-body">
-                        {{#if hasPublishedCount 'postsCounter'}}
-                            {{number (getPublishedCount 'postsCounter')}}
-                        {{else}}
-                            Not implemented.
-                        {{/if}}
+                        {{> statNumber stats.Posts}}
                     </div>
                 </div>
             </div>
@@ -37,11 +39,15 @@
                 <div class="panel panel-default">
                     <div class="panel-heading"><h5>Operations</h5></div>
                     <div class="panel-body">
-                        {{#if hasPublishedCount 'operationsCounter'}}
-                            {{number (getPublishedCount 'operationsCounter')}}
-                        {{else}}
-                            Not implemented.
-                        {{/if}}
+                        {{> statNumber stats.Operations}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Virtual Operations</h5></div>
+                    <div class="panel-body">
+                        {{> statNumber stats.VirtualOperations}}
                     </div>
                 </div>
             </div>
@@ -49,5 +55,7 @@
     </div>
 </template>
 
-
+<template name="statNumber">
+    {{number count}} entries ∙ {{number size}} MB
+</template>
 
