@@ -1,6 +1,11 @@
-@media (max-width: 768px) {.container {    width: 750px;    background: none !important;}}
+@media (max-width: 768px) {
+    .bgimg {
+        background: none !important;
+    }
+}
+
 .bgimg {
-    background: url(bg1.png) no-repeat top right;
+    background: url('bg1.png') no-repeat top right;
     background-size: contain;
 }
 
