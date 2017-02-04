@@ -3,7 +3,7 @@ import {Mongo} from 'meteor/mongo'
 Accounts2 = new Mongo.Collection("Accounts");
 Posts = new Mongo.Collection("Posts");
 Operations = new Mongo.Collection("Operations");
-VirtualOperations = new Mongo.Collection("VirtualOperations");
+AccountOperations = new Mongo.Collection("AccountOperations");
 Settings = new Mongo.Collection("settings");
 Statistics = new Mongo.Collection("stats");
 
