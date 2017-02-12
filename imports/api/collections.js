@@ -6,6 +6,7 @@ Operations = new Mongo.Collection("Operations");
 AccountOperations = new Mongo.Collection("AccountOperations");
 Settings = new Mongo.Collection("settings");
 Statistics = new Mongo.Collection("stats");
+PriceHistory = new Mongo.Collection("PriceHistory");
 
 if (Meteor.isServer) {
     Meteor.publish('settings', function () {
@@ -14,5 +15,13 @@ if (Meteor.isServer) {
 
     Meteor.publish('statistics', function () {
         return Statistics.find();
+    });
+
+    Meteor.publish('tickers', function () {
+        return PriceHistory.find({},
+            {
+                sort: {"timestamp": -1},
+                limit: 100
+            });
     });
 }

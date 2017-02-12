@@ -1,0 +1,61 @@
+<template name="tickers">
+    <div class="container">
+
+        <h3>Head Prices</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>STEEM/USD</h5></div>
+                    <div class="panel-body">${{round lastPrice.steem_usd_implied 4}} USD</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>SBD/USD</h5></div>
+                    <div class="panel-body">${{round lastPrice.sbd_usd_implied 4}} USD</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>BTC/USD</h5></div>
+                    <div class="panel-body">${{round lastPrice.btc_usd 2}} USD</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>STEEM/BTC</h5></div>
+                    <div class="panel-body">{{round lastPrice.steem_btc 8}} BTC</div>
+                </div>
+            </div>
+        </div>
+        <i>*Prices are updated houry. Last update {{timeFromNowReactive lastPrice.timestamp}}.</i>
+
+        <br>
+
+        <!--<h3>Price Charts</h3>-->
+
+        <!--&lt;!&ndash; TradingView Widget BEGIN &ndash;&gt;-->
+        <!--<script type="text/javascript">-->
+            <!--new TradingView.widget({-->
+                <!--"width": 980,-->
+                <!--"height": 610,-->
+                <!--"symbol": "POLONIEX:STEEMBTC",-->
+                <!--"interval": "60",-->
+                <!--"timezone": "Etc/UTC",-->
+                <!--"theme": "White",-->
+                <!--"style": "1",-->
+                <!--"locale": "en",-->
+                <!--"toolbar_bg": "#f1f3f6",-->
+                <!--"enable_publishing": false,-->
+                <!--"hide_side_toolbar": false,-->
+                <!--"allow_symbol_change": true,-->
+                <!--"hideideas": true-->
+            <!--});-->
+        <!--</script>-->
+        <!--&lt;!&ndash; TradingView Widget END &ndash;&gt;-->
+
+
+
+    </div>
+</template>
+

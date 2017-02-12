@@ -28,6 +28,11 @@ Template.registerHelper('decimal', function(num, precision) {
     return Math.round(num * multiplier) / multiplier;
 });
 
+Template.registerHelper('round', function(num, precision) {
+    let multiplier = Math.pow(10, precision || 0);
+    return Math.round(num * multiplier) / multiplier;
+});
+
 Template.registerHelper('upper', function(string) {
     return string.toUpperCase();
 });
