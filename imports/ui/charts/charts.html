@@ -1,165 +1,22 @@
 <template name="charts">
-    <div class="container">
+    <div class="container text-center">
+
+        <br>
+        <h3>Content</h3>
+
+        <iframe width="960" height="740" frameborder="0" scrolling="no" src="//plot.ly/~furion/16.embed"></iframe>
+        <p class="text-muted"><i>Comments and edits are not included.</i></p>
+        <hr>
+
+        <br>
+        <h3>Blockchain</h3>
+
+        <iframe width="960" height="740" frameborder="0" scrolling="no" src="//plot.ly/~furion/12.embed"></iframe>
+        <p class="text-muted"><i>Operation types that represent less than 0.05% of operations have been excluded.</i></p>
+        <hr>
 
 
-        <div class="row">
-            <div class="col-sm-3">
-                <br>
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span
-                                        class="glyphicon glyphicon-folder-close"></span> Content</a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-pencil text-primary"></span>
-                                                Daily Unique Posts</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-flash text-success"></span>
-                                                Curation</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-file text-info"></span>
-                                                Top Authors</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-comment text-success"></span>
-                                                Comments</a> <span class="badge">42</span>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span
-                                        class="glyphicon glyphicon-user"></span> People</a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Change Password</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Notifications</a> <span class="label label-info">9</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Import</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="text-danger"><span
-                                                    class="glyphicon glyphicon-trash text-danger"></span> Delete Account</a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span
-                                        class="glyphicon glyphicon-th"></span> Blockchain</a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Orders</a> <span class="label label-success">$ 42</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Invoices</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Shipments</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Logging</a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                    <span class="glyphicon glyphicon-file"></span> Reports</a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-usd"></span> Power Ups</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-user"></span> Distribution</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#"><span class="glyphicon glyphicon-tasks"></span> Transactions</a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-9">
-                <iframe width="740" height="620" frameborder="0" scrolling="no" src="//plot.ly/~furion/16.embed"></iframe>
-            </div>
-        </div>
     </div>
-
-
-
 
 </template>
 
