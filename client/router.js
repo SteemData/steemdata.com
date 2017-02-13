@@ -12,9 +12,17 @@ FlowRouter.route('/stats', {
     }
 });
 
-FlowRouter.route('/prices', {
-    name: 'prices',
+FlowRouter.route('/tickers', {
+    name: 'tickers',
     action() {
         BlazeLayout.render('mainLayout', {body: "tickers"});
+    }
+});
+
+
+FlowRouter.route('/charts', {
+    name: 'charts',
+    action() {
+        BlazeLayout.render('mainLayout', {body: "charts"});
     }
 });

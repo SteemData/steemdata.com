@@ -8,6 +8,7 @@ import '../imports/ui/mainLayout/layout.html'
 import '../imports/ui/home/home.js'
 import '../imports/ui/stats/stats.js'
 import '../imports/ui/tickers/tickers.js'
+import '../imports/ui/charts/charts.js'
 
 // set page metadata
 let title = "SteemData";
