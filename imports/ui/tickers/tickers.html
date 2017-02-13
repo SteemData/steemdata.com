@@ -31,29 +31,39 @@
         <i>*Prices are updated houry. Last update {{timeFromNowReactive lastPrice.timestamp}}.</i>
 
         <br>
+        <br>
+        <!--<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~furion/12.embed"></iframe>-->
 
-        <!--<h3>Price Charts</h3>-->
+        <h3>Charts</h3>
+        <div>
 
-        <!--&lt;!&ndash; TradingView Widget BEGIN &ndash;&gt;-->
-        <!--<script type="text/javascript">-->
-            <!--new TradingView.widget({-->
-                <!--"width": 980,-->
-                <!--"height": 610,-->
-                <!--"symbol": "POLONIEX:STEEMBTC",-->
-                <!--"interval": "60",-->
-                <!--"timezone": "Etc/UTC",-->
-                <!--"theme": "White",-->
-                <!--"style": "1",-->
-                <!--"locale": "en",-->
-                <!--"toolbar_bg": "#f1f3f6",-->
-                <!--"enable_publishing": false,-->
-                <!--"hide_side_toolbar": false,-->
-                <!--"allow_symbol_change": true,-->
-                <!--"hideideas": true-->
-            <!--});-->
-        <!--</script>-->
-        <!--&lt;!&ndash; TradingView Widget END &ndash;&gt;-->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#steem" aria-controls="home" role="tab"
+                                                          data-toggle="tab">STEEM/BTC</a></li>
+                <li role="presentation"><a href="#sbd" aria-controls="profile" role="tab" data-toggle="tab">SBD/BTC</a>
+                </li>
+            </ul>
 
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="steem">
+                    <div class="row">
+                        <iframe src='tv_steem_btc.html' width="1000" height="700" frameborder="0"
+                                scrolling="no"></iframe>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="sbd">
+                    <div class="row">
+                        <iframe src='tv_sbd_btc.html' width="1000" height="700" frameborder="0"
+                                scrolling="no"></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
 
 
     </div>
