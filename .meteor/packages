@@ -24,7 +24,7 @@ kadira:flow-router
 kadira:blaze-layout
 arillo:flow-router-helpers
 numeral:numeral
-force-ssl
+force-ssl@1.0.13
 percolate:momentum
 fortawesome:fontawesome
 kadira:dochead
