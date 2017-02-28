@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .bgimg {
+        background: none !important;
+    }
+}
+
+.bgimg {
+    background: url('bg1.png') no-repeat top right;
+    background-size: contain;
+}
+

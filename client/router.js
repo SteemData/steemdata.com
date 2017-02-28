@@ -5,6 +5,14 @@ FlowRouter.route('/', {
     }
 });
 
+
+FlowRouter.route('/guide', {
+    name: 'guide',
+    action() {
+        BlazeLayout.render('mainLayout', {body: "guide"});
+    }
+});
+
 FlowRouter.route('/stats', {
     name: 'stats',
     action() {
