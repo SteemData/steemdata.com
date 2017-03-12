@@ -13,6 +13,13 @@ FlowRouter.route('/guide', {
     }
 });
 
+FlowRouter.route('/api', {
+    name: 'api',
+    action() {
+        BlazeLayout.render('mainLayout', {body: "api"});
+    }
+});
+
 FlowRouter.route('/stats', {
     name: 'stats',
     action() {
