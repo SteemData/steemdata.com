@@ -85,11 +85,12 @@ Additionally, each item will also have a link to itself:
 
 ## Available Endpoints
 WebAPI gives you access to all SteemData MongoDB collections.
-https://webapi.steemdata.com/Operations
-https://webapi.steemdata.com/AccountOperations
-https://webapi.steemdata.com/Accounts
-https://webapi.steemdata.com/Posts
-https://webapi.steemdata.com/PriceHistory
+
+[https://webapi.steemdata.com/Operations](https://webapi.steemdata.com/Operations)  
+[https://webapi.steemdata.com/AccountOperations](https://webapi.steemdata.com/AccountOperations)  
+[https://webapi.steemdata.com/Accounts](https://webapi.steemdata.com/Accounts)  
+[https://webapi.steemdata.com/Posts](https://webapi.steemdata.com/Posts)  
+[https://webapi.steemdata.com/PriceHistory](https://webapi.steemdata.com/PriceHistory)  
 
 Feel free to play around with this with `curl` or a GUI tool like `Postman`.
 
@@ -103,4 +104,4 @@ If you need a fast, bandwidth efficient, composite or aggregate query, or custom
 Api0 is a special API that leverages the power of SteemData and offers custom endpoints for STEEM app developers.
 
 Example Endpoint:
-https://api0.steemdata.com/busy.org/furion/with_metadata/followers
+[https://api0.steemdata.com/busy.org/furion/with_metadata/followers](https://api0.steemdata.com/busy.org/furion/with_metadata/followers)
