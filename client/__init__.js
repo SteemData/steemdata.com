@@ -22,5 +22,5 @@ DocHead.addMeta(metaInfo);
 let metaViewport = {name: "viewport", content: "width=device-width, initial-scale=1", };
 DocHead.addMeta(metaViewport);
 
-let linkInfo = {rel: "icon", type: "image/png", href: "/favicon.png"};
+let linkInfo = {rel: "icon", type: "image/png", href: "/fav.png"};
 DocHead.addLink(linkInfo);
