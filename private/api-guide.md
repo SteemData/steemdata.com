@@ -90,6 +90,7 @@ WebAPI gives you access to all SteemData MongoDB collections.
 [https://webapi.steemdata.com/AccountOperations](https://webapi.steemdata.com/AccountOperations)  
 [https://webapi.steemdata.com/Accounts](https://webapi.steemdata.com/Accounts)  
 [https://webapi.steemdata.com/Posts](https://webapi.steemdata.com/Posts)  
+[https://webapi.steemdata.com/Comments](https://webapi.steemdata.com/Comments)  
 [https://webapi.steemdata.com/PriceHistory](https://webapi.steemdata.com/PriceHistory)  
 
 Feel free to play around with this with `curl` or a GUI tool like `Postman`.
@@ -99,9 +100,7 @@ Feel free to play around with this with `curl` or a GUI tool like `Postman`.
 ## Need custom functionality for your app?
 While WebAPI can work well for most of data fetching related queries, occasionally, a more complex solution is required.
 
-If you need a fast, bandwidth efficient, composite or aggregate query, or custom business logic, feel free to contact me, and I will create you a custom endpoint on Api0.
+If you need a fast, bandwidth efficient, composite or aggregate query, or custom business logic, feel free to contact me, and I will create you a custom endpoint.
 
-Api0 is a special API that leverages the power of SteemData and offers custom endpoints for STEEM app developers.
-
-Example Endpoint:
-[https://api0.steemdata.com/busy.org/furion/with_metadata/followers](https://api0.steemdata.com/busy.org/furion/with_metadata/followers)
+Available API's:
+[https://api.steemdata.com](https://api.steemdata.com)

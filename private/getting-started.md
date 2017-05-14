@@ -74,6 +74,7 @@ Operations
 AccountOperations
 PriceHistory
 Posts
+Comments
 Accounts
 ```
 
@@ -188,4 +189,3 @@ def busy_account_following(account_name, following):
 If you'd like to learn how [SteemData Charts](https://steemdata.com/charts) work behind the scenes, feel free to download and run [this iPython Notebook](https://github.com/SteemData/steemdata-charts/blob/master/Charts.ipynb).
 It should give you some ideas of what SteemData can be used for, as well as provides a quick way for you to start playing with code and writing your own.
 
-![](https://i.imgur.com/qw65eQD.png)
