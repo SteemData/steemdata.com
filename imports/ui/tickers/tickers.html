@@ -5,30 +5,34 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h5>STEEM/USD</h5></div>
-                    <div class="panel-body">${{round lastPrice.steem_usd_implied 4}} USD</div>
+                    <div class="panel-heading"><h5>STEEM</h5></div>
+                    <div class="panel-body">
+                        ${{round lastPrice.steem_usd_implied 4}} USD
+                        <span class="pull-right">{{round lastPrice.steem_btc 8}} BTC</span>
+
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h5>SBD/USD</h5></div>
-                    <div class="panel-body">${{round lastPrice.sbd_usd_implied 4}} USD</div>
+                    <div class="panel-heading"><h5>SBD</h5></div>
+                    <div class="panel-body">
+                        ${{round lastPrice.sbd_usd_implied 4}} USD
+                        <span class="pull-right">{{round lastPrice.sbd_btc 8}} BTC</span>
+
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h5>BTC/USD</h5></div>
-                    <div class="panel-body">${{round lastPrice.btc_usd 2}} USD</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h5>STEEM/BTC</h5></div>
-                    <div class="panel-body">{{round lastPrice.steem_btc 8}} BTC</div>
+                    <div class="panel-heading"><h5>BTC</h5></div>
+                    <div class="panel-body">
+                        ${{round lastPrice.btc_usd 2}} USD
+                    </div>
                 </div>
             </div>
         </div>
-        <i>Prices are updated every 5 minutes. Last update {{timeFromNowReactive lastPrice.timestamp}}.</i>
+        <i>Prices are updated every 5 minutes. Last update was {{timeFromNowReactive lastPrice.timestamp}}.</i>
 
         <br>
         <br>
