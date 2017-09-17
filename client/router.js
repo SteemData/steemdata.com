@@ -41,3 +41,10 @@ FlowRouter.route('/charts', {
         BlazeLayout.render('mainLayout', {body: "charts"});
     }
 });
+
+FlowRouter.route('/sbds', {
+    name: 'sbds',
+    action() {
+        BlazeLayout.render('mainLayout', {body: "sbds"});
+    }
+});

@@ -1,0 +1,44 @@
+<template name="sbds">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <h3>What is SBDS?</h3>
+                <p class="lead">SBDS is a collection of MySQL based database services developed by Steemit Inc.
+                SteemData is providing these services for free on a completely open basis (no signup required).</p>
+                <p>
+                    <b>SBDS: </b><code>mysql://steemit:steemit@mysql.steemdata.com:3306/sbds</code><br>
+                    <b>HIVE: </b><code>mysql://steemit:steemit@mysql.steemdata.com:3306/hive</code>
+                </p>
+                <p>
+                    <img src="https://i.imgur.com/fXpyhju.png" class="img-responsive">
+                </p>
+
+
+            </div>
+
+            <div class="col-md-4">
+                <h3>SteemData MySQL Server</h3>
+                <blockquote>
+                    Host: <i>mysql.steemdata.com</i> <br>
+                    Port: <i>3306</i> <br>
+
+                    Databases: <i>sbds, hive</i> <br>
+                    Username: <i>steemit</i> <br>
+                    Password: <i>steemit</i> <br>
+                </blockquote>
+
+                <h3>Looking for SteemData MongoDB?</h3>
+                You can find it <a href="{{pathFor '/'}}">here</a>.
+                Also check out the introductory guides for SteemData <a href="{{pathFor '/guide'}}">MongoDB</a> and
+                <a href="{{pathFor '/api'}}">WebAPI</a> services.
+                <br>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</template>

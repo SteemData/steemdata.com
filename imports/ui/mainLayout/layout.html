@@ -20,31 +20,47 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="{{isActiveRoute 'home'}}"><a href="{{pathFor '/'}}">Home</a></li>
-                    <li class="{{isActiveRoute 'stats'}}"><a href="{{pathFor '/stats'}}">DB Stats</a></li>
-                    <li class="{{isActiveRoute 'tickers'}}"><a href="{{pathFor '/tickers'}}">Tickers</a></li>
-                    <li class="{{isActiveRoute 'charts'}}"><a href="{{pathFor '/charts'}}">Charts</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li class="dropdown {{isActiveRoute 'home'}} {{isActiveRoute 'stats'}} {{isActiveRoute 'guide'}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MongoDB <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="{{isActiveRoute 'home'}}"><a href="{{pathFor '/'}}">SteemData DB</a></li>
+                            <li class="{{isActiveRoute 'stats'}}"><a href="{{pathFor '/stats'}}">DB Stats</a></li>
+                            <li class="divider"></li>
+                            <li class="{{isActiveRoute 'guide'}}"><a href="{{pathFor '/guide'}}">Mongo Guide</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown {{isActiveRoute 'sbds'}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MySQL <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="{{isActiveRoute 'sbds'}}"><a href="{{pathFor '/sbds'}}">SBDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown {{isActiveRoute 'api'}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WebAPI <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="https://api.steemdata.com">API</a></li>
+                            <li><a href="https://webapi.steemdata.com">WebAPI</a></li>
+                            <li class="divider"></li>
+                            <li class="{{isActiveRoute 'api'}}"><a href="{{pathFor '/api'}}">WebAPI Guide</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown {{isActiveRoute 'tickers'}} {{isActiveRoute 'charts'}}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
+                            <li class="{{isActiveRoute 'tickers'}}"><a href="{{pathFor '/tickers'}}">Tickers</a></li>
+                            <li class="{{isActiveRoute 'charts'}}"><a href="{{pathFor '/charts'}}">Charts</a></li>
+                            <li class="divider"></li>
                             <li><a href="https://mentions.steemdata.com">Mentions</a></li>
                             <li><a href="https://phist.steemdata.com">Post History</a></li>
                             <li><a href="https://notify.steemdata.com">Notify</a></li>
-                            <!--<li class="divider"></li>-->
-                            <!--<li><a href="https://steemq.com">SteemQ Video</a></li>-->
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{pathFor '/guide'}}">MongoDB Guide</a></li>
-                            <li><a href="{{pathFor '/api'}}">WebAPI Guide</a></li>
                             <li class="divider"></li>
-                            <li><a href="https://github.com/SteemData">GitHub</a></li>
+                            <li><a href="https://alpha.view.ly">Viewly Video</a></li>
                         </ul>
                     </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/SteemData"><i class="fa fa-github-alt"></i> GitHub</a></li>
                 </ul>
             </div>
         </div>
