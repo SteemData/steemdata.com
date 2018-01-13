@@ -11,14 +11,32 @@
             </div>
         </div>
 
-        <h3>Blockchain</h3>
+        <h3>Indexers</h3>
         <div class="row">
             <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h5>Head Block</h5></div>
-                    <div class="panel-body">{{number lastBlock}}</div>
+                    <div class="panel-heading"><h5>Operations</h5></div>
+                    <div class="panel-body">{{number indexer.operations_checkpoint}}</div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Comments</h5></div>
+                    <div class="panel-body">{{number indexer.comments_checkpoint}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h5>Accounts (verify)</h5></div>
+                    <div class="panel-body">{{indexer.accounts_checkpoint}}</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Operations</h3>
+        <div class="row">
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h5>Operations</h5></div>
@@ -31,6 +49,7 @@
 
         <h3>Accounts</h3>
         <div class="row">
+
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h5>Accounts</h5></div>
@@ -70,8 +89,8 @@
         </div>
 
 
-        <h3>Blockchain Syncing Status</h3>
-        <i>SteemData occasionally falls behind the blockchain head. See the damage here:</i>
+        <h3>Health Checks</h3>
+        <i>In case of infrastructure failure, SteemData can fall behind the blockchain head.</i>
         <br>
         <br>
         <a href="https://api.steemdata.com/health" class="btn btn-default">SteemData Head Check</a>

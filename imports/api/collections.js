@@ -4,13 +4,13 @@ Accounts2 = new Mongo.Collection("Accounts");
 Posts = new Mongo.Collection("Posts");
 Operations = new Mongo.Collection("Operations");
 AccountOperations = new Mongo.Collection("AccountOperations");
-Settings = new Mongo.Collection("settings");
+Indexer = new Mongo.Collection("_indexer");
 Statistics = new Mongo.Collection("stats");
 PriceHistory = new Mongo.Collection("PriceHistory");
 
 if (Meteor.isServer) {
-    Meteor.publish('settings', function () {
-        return Settings.find();
+    Meteor.publish('_indexer', function () {
+        return Indexer.find();
     });
 
     Meteor.publish('statistics', function () {
